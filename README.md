@@ -5,6 +5,9 @@
 <p align="center"><b>The AI research notebook that keeps up with you.</b><br>
 Think out loud and get organized · read papers in your own language · never miss new work · plan a day you can actually do.</p>
 
+> *"I use the Pensieve. One simply siphons the excess thoughts from one's mind, pours them into the basin, and examines them at one's leisure."*
+> — Albus Dumbledore, *Harry Potter and the Goblet of Fire*
+
 <p align="center"><b>Free</b> · <b>Works locally</b> · <b>Collects no data</b> · <b>No account</b><br>
 Windows · macOS (Apple Silicon & Intel) · Linux · Android</p>
 

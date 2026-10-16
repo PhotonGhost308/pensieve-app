@@ -37,6 +37,11 @@ nav.links a { color: var(--text-2); }
 .lang { margin-left: auto; border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 8px; padding: 5px 10px; font: inherit; font-size: 14px; cursor: pointer; }
 .hero { padding: 72px 0 28px; text-align: center; }
 .hero h1 { font-size: clamp(36px, 6vw, 60px); line-height: 1.08; margin: 0 0 18px; letter-spacing: -0.02em; }
+.hero .quote { margin: 0 auto 30px; max-width: 760px; }
+.hero .quote blockquote { margin: 0; font: italic 400 clamp(19px, 2.6vw, 26px)/1.5 Georgia, "Times New Roman", "Songti SC", "STSong", serif; color: var(--text); }
+[lang="zh"] .hero .quote blockquote { font-style: normal; }
+.hero .quote figcaption { margin-top: 10px; font-size: 14px; color: var(--text-3); text-align: center; }
+.hero .quote cite { font-style: italic; }
 .hero p.lead { font-size: clamp(17px, 2.2vw, 21px); color: var(--text-2); max-width: 760px; margin: 0 auto 30px; }
 .cta { display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: #fff; padding: 13px 24px; border-radius: 12px; font-weight: 600; font-size: 17px; box-shadow: var(--shadow); }
 .cta:hover { text-decoration: none; filter: brightness(1.06); }
@@ -133,7 +138,14 @@ html:not([lang="zh"]) [data-zh] { display: none; }
     <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-en>Collects no data</span><span data-zh>不收集任何数据</span></span>
     <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-en>No account needed</span><span data-zh>无需注册</span></span>
   </div>
-  <h1><span data-en>Your head is full.<br>Pour it into Pensieve.</span><span data-zh>脑子装满了？<br>倒进 Pensieve 吧。</span></h1>
+  <figure class="quote">
+    <blockquote>
+      <span data-en>“I use the Pensieve. One simply siphons the excess thoughts from one’s mind, pours them into the basin, and examines them at one’s leisure.”</span>
+      <span data-zh>“这时我就使用冥想盆，把多余的思想从脑子里吸出来，倒进这个盆里，有空的时候好好看看。”</span>
+    </blockquote>
+    <figcaption><span data-en>— Albus Dumbledore, <cite>Harry Potter and the Goblet of Fire</cite></span><span data-zh>——阿不思·邓布利多，《哈利·波特与火焰杯》</span></figcaption>
+  </figure>
+  <h1><span data-en>Pensieve, for your research.</span><span data-zh>属于你的冥想盆。</span></h1>
   <p class="lead">
     <span data-en>The AI research notebook that keeps up with you. Think out loud and get organized, read papers in your own language, never miss new work, and plan a day you can actually do — on your computer and your phone, private by design.</span>
     <span data-zh>一个跟得上你的 AI 科研笔记本。想到就说，自动整理；用母语读论文；不错过任何新工作；把一天安排得切实可行——电脑与手机同步，从设计上保护隐私。</span>
