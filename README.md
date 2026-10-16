@@ -46,4 +46,8 @@ Windows · macOS (Apple Silicon & Intel) · Linux · Android</p>
 
 First start: Windows SmartScreen → *More info → Run anyway*. macOS → *System Settings → Privacy & Security → Open Anyway* (the app is not notarized yet). Linux → `chmod +x` the AppImage, or `sudo apt install ./Pensieve-*.deb`. The iPhone app is coming soon.
 
+## Designer
+
+Pensieve is designed by **Tianyi Xu** — homepage: [photontec.github.io](https://photontec.github.io/#about-me).
+
 Questions, ideas, bugs: [open an issue](https://github.com/PhotonGhost308/pensieve-app/issues).
