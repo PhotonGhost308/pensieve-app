@@ -9,7 +9,7 @@ Think out loud and get organized · read papers in your own language · never mi
 > — Albus Dumbledore, *Harry Potter and the Goblet of Fire*
 
 <p align="center"><b>Free</b> · <b>Works locally</b> · <b>Collects no data</b> · <b>No account</b><br>
-Windows · macOS (Apple Silicon & Intel) · Linux · Android</p>
+Windows · macOS (Apple Silicon & Intel) · Linux · Android · iPhone & iPad</p>
 
 <p align="center"><a href="https://photonghost308.github.io/pensieve-app/"><b>🌐 Website</b></a> &nbsp;·&nbsp; <a href="https://github.com/PhotonGhost308/pensieve-app/releases/latest"><b>⬇️ Download the latest version</b></a></p>
 
@@ -44,7 +44,7 @@ Windows · macOS (Apple Silicon & Intel) · Linux · Android</p>
 3. Pair your phone in **Settings → Sync → Pair a phone** (enter the address and the 6-digit code on the phone).
 4. Press the round mic — or **Ctrl/⌘+Shift+Space** — and say what's on your mind.
 
-First start: Windows SmartScreen → *More info → Run anyway*. macOS → *System Settings → Privacy & Security → Open Anyway* (the app is not notarized yet). Linux → `chmod +x` the AppImage, or `sudo apt install ./Pensieve-*.deb`. The iPhone app is coming soon.
+First start: Windows SmartScreen → *More info → Run anyway*. macOS → *System Settings → Privacy & Security → Open Anyway* (the app is not notarized yet). Linux → `chmod +x` the AppImage, or `sudo apt install ./Pensieve-*.deb`. iPhone / iPad (iOS 15+) → download the IPA and install it with Sideloadly or AltStore ([step by step](https://photonghost308.github.io/pensieve-app/#ios-install)).
 
 ## Designer
 
