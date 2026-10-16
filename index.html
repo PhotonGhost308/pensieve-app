@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pensieve — AI research notebook</title>
-<meta name="description" content="Pensieve: speak your thoughts, plan your day, read and translate papers, work with Codex — on Windows, macOS, Linux and Android, synced through your own computer.">
+<meta name="description" content="Pensieve — free, local, private AI research notebook: speak your thoughts, plan your day, read and translate papers, work with Codex — on Windows, macOS, Linux and Android, synced through your own computer.">
 <meta property="og:title" content="Pensieve — AI research notebook">
 <meta property="og:description" content="Speak your thoughts, plan your day, read and translate papers, work with Codex — on your computer and your phone, in sync.">
 <meta property="og:image" content="https://photonghost308.github.io/pensieve-app/screenshots/today.webp">
@@ -77,6 +77,18 @@ figcaption { text-align: center; color: var(--text-3); font-size: 14px; margin-t
 .step::before { content: counter(s); display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font-weight: 700; margin-bottom: 8px; }
 .step h4 { margin: 0 0 6px; font-size: 17px; }
 .step p { margin: 0; color: var(--text-2); font-size: 15px; }
+.pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 0 0 26px; }
+.pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 13px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); font-size: 14px; font-weight: 600; color: var(--text-2); }
+.pill svg { width: 15px; height: 15px; color: var(--ok); }
+.why { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
+.why div { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px; }
+.why b { display: block; font-size: 17px; margin: 6px 0 6px; }
+.why span.e { font-size: 26px; }
+.why p { margin: 0; color: var(--text-2); font-size: 15px; }
+.privacy { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
+.privacy div { border-radius: 14px; padding: 22px; background: var(--accent-soft); }
+.privacy b { display: block; font-size: 18px; margin-bottom: 6px; color: var(--text); }
+.privacy p { margin: 0; color: var(--text-2); font-size: 15px; }
 .honest { font-size: 14px; color: var(--text-3); text-align: center; max-width: 760px; margin: 22px auto 0; }
 footer { border-top: 1px solid var(--border); padding: 30px 0 46px; color: var(--text-3); font-size: 14px; }
 footer .wrap { display: flex; flex-wrap: wrap; gap: 14px 26px; justify-content: space-between; }
@@ -104,6 +116,7 @@ html:not([lang="zh"]) [data-zh] { display: none; }
     <a class="brand" href="#"><img src="icon.png" alt=""> Pensieve</a>
     <nav class="links">
       <a href="#features"><span data-en>Features</span><span data-zh>功能</span></a>
+      <a href="#privacy"><span data-en>Privacy</span><span data-zh>隐私</span></a>
       <a href="#download"><span data-en>Download</span><span data-zh>下载</span></a>
       <a href="#start"><span data-en>Getting started</span><span data-zh>上手</span></a>
       <a href="https://github.com/PhotonGhost308/pensieve-app/releases"><span data-en>Releases</span><span data-zh>所有版本</span></a>
@@ -114,15 +127,30 @@ html:not([lang="zh"]) [data-zh] { display: none; }
 
 <main>
 <div class="wrap hero">
-  <h1><span data-en>Your thoughts, papers and plans —<br>in one notebook that keeps up.</span><span data-zh>想法、文献与计划，<br>都在一个跟得上你的笔记本里。</span></h1>
+  <div class="pills">
+    <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-en>Free</span><span data-zh>免费</span></span>
+    <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-en>Works locally</span><span data-zh>本地运行</span></span>
+    <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-en>Collects no data</span><span data-zh>不收集任何数据</span></span>
+    <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-en>No account needed</span><span data-zh>无需注册</span></span>
+  </div>
+  <h1><span data-en>Your head is full.<br>Pour it into Pensieve.</span><span data-zh>脑子装满了？<br>倒进 Pensieve 吧。</span></h1>
   <p class="lead">
-    <span data-en>Pensieve is an AI research notebook. Speak the way you think and it lands in the right place; plan your day around what is fixed; read and translate papers; work with Codex — on your computer and your phone, synced through your own computer.</span>
-    <span data-zh>Pensieve 是一个 AI 科研笔记本。像思考一样说出来，内容就会落到该去的地方；围绕固定日程安排一天；阅读并翻译论文；和 Codex 一起写代码——电脑与手机实时同步，数据只经过你自己的电脑。</span>
+    <span data-en>The AI research notebook that keeps up with you. Think out loud and get organized, read papers in your own language, never miss new work, and plan a day you can actually do — on your computer and your phone, private by design.</span>
+    <span data-zh>一个跟得上你的 AI 科研笔记本。想到就说，自动整理；用母语读论文；不错过任何新工作；把一天安排得切实可行——电脑与手机同步，从设计上保护隐私。</span>
   </p>
   <a class="cta" id="cta" href="#download"><span data-en>Download Pensieve</span><span data-zh>下载 Pensieve</span> <small id="cta-os"></small></a>
-  <div class="sub-cta"><span data-en>Free · Windows, macOS, Linux and Android · version</span><span data-zh>免费 · Windows、macOS、Linux、Android · 版本</span> <span id="ver">0.4.4</span></div>
+  <div class="sub-cta"><span data-en>Free forever · Windows, macOS, Linux and Android · version</span><span data-zh>永久免费 · Windows、macOS、Linux、Android · 版本</span> <span id="ver">0.4.5</span></div>
   <img class="shot" src="screenshots/today.webp" alt="Pensieve: the Today view" width="1920" height="1200">
 </div>
+
+<section style="padding-top:40px">
+  <div class="wrap why">
+    <div><span class="e">🎙</span><b><span data-en>Think out loud, get organized</span><span data-zh>想到就说，自动整理</span></b><p><span data-en>Ramble for a minute; get back an idea, to-dos and appointments — each in its place.</span><span data-zh>随口说上一分钟，得到想法、待办和日程，各归其位。</span></p></div>
+    <div><span class="e">📄</span><b><span data-en>Papers in your language</span><span data-zh>用母语读论文</span></b><p><span data-en>Translations that follow the paper's paragraphs, with the key sentences in bold.</span><span data-zh>按原文段落翻译，关键句加粗。</span></p></div>
+    <div><span class="e">🔎</span><b><span data-en>Never miss new work</span><span data-zh>不错过新工作</span></b><p><span data-en>AI finds papers, rates them against your project, and brings the newest every morning.</span><span data-zh>AI 帮你找论文、按你的课题打分，每天早上送来最新的。</span></p></div>
+    <div><span class="e">🗓</span><b><span data-en>A day you can actually do</span><span data-zh>切实可行的一天</span></b><p><span data-en>Fixed appointments stay fixed, work fits around them, reminders reach your phone.</span><span data-zh>固定日程不动，工作围绕它安排，提醒准时送到手机。</span></p></div>
+  </div>
+</section>
 
 <section id="features">
   <div class="wrap">
@@ -197,7 +225,7 @@ html:not([lang="zh"]) [data-zh] { display: none; }
       <div class="text">
         <span class="tag"><span data-en>Desktop</span><span data-zh>桌面版</span></span>
         <h3><span data-en>Codex, Git and terminals</span><span data-zh>Codex、Git 与终端</span></h3>
-        <p><span data-en>All your Codex sessions, with limits at a glance, compact and fork, slash commands and drafts; terminals; a Git page with AI commit messages and releases — and the Codex CLI kept up to date in the background.</span><span data-zh>所有 Codex 会话一览，额度一目了然，支持压缩、分叉、斜杠命令和草稿；内置终端；Git 页面可由 AI 写提交信息和发布说明——Codex CLI 还会在后台自动保持最新。</span></p>
+        <p><span data-en>All your Codex sessions, with limits at a glance, compact and fork, slash commands and drafts; terminals; and a Git page with AI commit messages and releases.</span><span data-zh>所有 Codex 会话一览，额度一目了然，支持压缩、分叉、斜杠命令和草稿；内置终端；Git 页面可由 AI 写提交信息和发布说明。</span></p>
       </div>
       <img class="shot" src="screenshots/codex.webp" alt="Codex in Pensieve" loading="lazy" width="1440" height="900">
     </div>
@@ -215,6 +243,19 @@ html:not([lang="zh"]) [data-zh] { display: none; }
   </div>
 </section>
 
+ <section id="privacy">
+  <div class="wrap">
+    <h2><span data-en>Free, local, private</span><span data-zh>免费、本地、私密</span></h2>
+    <p class="intro"><span data-en>Your notes are yours. Pensieve is built so that nobody else — including us — ever sees them.</span><span data-zh>你的笔记只属于你。Pensieve 的设计保证任何人——包括我们——都看不到它们。</span></p>
+    <div class="privacy">
+      <div><b><span data-en>Works locally</span><span data-zh>本地运行</span></b><p><span data-en>Your computer is the hub. Every paired device keeps a full copy and works offline; sync goes straight between your own devices.</span><span data-zh>你的电脑就是同步中心。每台配对的设备都保存完整副本，离线可用；同步只在你自己的设备之间进行。</span></p></div>
+      <div><b><span data-en>Collects no data</span><span data-zh>不收集数据</span></b><p><span data-en>No account, no Pensieve cloud, no analytics, no tracking. Nothing is ever sent to us.</span><span data-zh>无需账号，没有 Pensieve 云，没有统计分析，没有追踪。不会向我们发送任何内容。</span></p></div>
+      <div><b><span data-en>Your AI, your key</span><span data-zh>你的 AI，你的密钥</span></b><p><span data-en>AI requests go directly to the service you choose — DeepSeek, OpenAI, Qwen, a local Ollama… Your key is stored encrypted on your computer.</span><span data-zh>AI 请求直接发往你选择的服务——DeepSeek、OpenAI、通义千问、本地 Ollama……密钥加密保存在你的电脑上。</span></p></div>
+      <div><b><span data-en>Free</span><span data-zh>免费</span></b><p><span data-en>Pensieve costs nothing. You pay your AI provider only for what you use — or run a free local model with Ollama.</span><span data-zh>Pensieve 完全免费。你只需按用量向 AI 服务商付费——也可以用 Ollama 运行免费的本地模型。</span></p></div>
+    </div>
+  </div>
+</section>
+
 <section id="download" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
   <div class="wrap">
     <h2><span data-en>Download</span><span data-zh>下载</span></h2>
@@ -223,34 +264,34 @@ html:not([lang="zh"]) [data-zh] { display: none; }
       <div class="dl" data-os="win">
         <div class="os"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5 10.5 4.4v7.1H3V5.5zm8.5-1.2L21 3v8.5h-9.5V4.3zM3 12.5h7.5v7.1L3 18.5v-6zm8.5 0H21V21l-9.5-1.3v-7.2z"/></svg> Windows</div>
         <div class="what"><span data-en>Windows 10 and 11 (64-bit)</span><span data-zh>Windows 10 / 11（64 位）</span></div>
-        <div class="btns"><a class="btn" data-asset="win" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.4.4/Pensieve-Setup-0.4.4.exe"><span data-en>Installer (.exe)</span><span data-zh>安装包（.exe）</span></a></div>
+        <div class="btns"><a class="btn" data-asset="win" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.4.5/Pensieve-Setup-0.4.5.exe"><span data-en>Installer (.exe)</span><span data-zh>安装包（.exe）</span></a></div>
         <div class="size" data-size="win"></div>
       </div>
       <div class="dl" data-os="mac-arm">
         <div class="os"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.5 2-3.7 2.1-3.8-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9s-2-.9-3.3-.9C6.1 6.9 4.5 7.9 3.6 9.5c-1.9 3.2-.5 8 1.3 10.6.9 1.3 1.9 2.7 3.3 2.6 1.3-.1 1.8-.8 3.4-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.2-2.6 1-1.5 1.4-2.9 1.4-3-.1 0-2.2-.8-2.2-3.5zM13.9 5.1c.7-.9 1.2-2.1 1.1-3.3-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.2 1.1.1 2.3-.6 3-1.5z"/></svg> macOS · Apple Silicon</div>
         <div class="what"><span data-en>Macs with M1, M2, M3 or M4</span><span data-zh>搭载 M1–M4 芯片的 Mac</span></div>
-        <div class="btns"><a class="btn" data-asset="mac-arm" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.4.4/Pensieve-0.4.4-mac-arm64.zip"><span data-en>Download (.zip)</span><span data-zh>下载（.zip）</span></a></div>
+        <div class="btns"><a class="btn" data-asset="mac-arm" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.4.5/Pensieve-0.4.5-mac-arm64.zip"><span data-en>Download (.zip)</span><span data-zh>下载（.zip）</span></a></div>
         <div class="size" data-size="mac-arm"></div>
       </div>
       <div class="dl" data-os="mac-intel">
         <div class="os"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.5 2-3.7 2.1-3.8-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9s-2-.9-3.3-.9C6.1 6.9 4.5 7.9 3.6 9.5c-1.9 3.2-.5 8 1.3 10.6.9 1.3 1.9 2.7 3.3 2.6 1.3-.1 1.8-.8 3.4-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.2-2.6 1-1.5 1.4-2.9 1.4-3-.1 0-2.2-.8-2.2-3.5zM13.9 5.1c.7-.9 1.2-2.1 1.1-3.3-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.2 1.1.1 2.3-.6 3-1.5z"/></svg> macOS · Intel</div>
         <div class="what"><span data-en>Macs with an Intel processor</span><span data-zh>搭载 Intel 处理器的 Mac</span></div>
-        <div class="btns"><a class="btn" data-asset="mac-intel" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.4.4/Pensieve-0.4.4-mac-x64.zip"><span data-en>Download (.zip)</span><span data-zh>下载（.zip）</span></a></div>
+        <div class="btns"><a class="btn" data-asset="mac-intel" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.4.5/Pensieve-0.4.5-mac-x64.zip"><span data-en>Download (.zip)</span><span data-zh>下载（.zip）</span></a></div>
         <div class="size" data-size="mac-intel"></div>
       </div>
       <div class="dl" data-os="linux">
         <div class="os"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-2 0-3.3 1.7-3.3 4.2 0 1.3.2 2.2-.6 3.6-.9 1.6-2.6 3.6-2.6 6.4 0 .6.1 1.1.3 1.6-.7.5-1.6.7-1.6 1.6 0 1.1 1.6 1.2 3.3 1.8 1.2.4 2.2 1 3.2.6.6-.2 1-.7 1.3-.7s.7.5 1.3.7c1 .4 2-.2 3.2-.6 1.7-.6 3.3-.7 3.3-1.8 0-.9-.9-1.1-1.6-1.6.2-.5.3-1 .3-1.6 0-2.8-1.7-4.8-2.6-6.4-.8-1.4-.6-2.3-.6-3.6C15.3 3.7 14 2 12 2zm-1.5 4.5c.5 0 .8.6.8 1.2s-.3 1-.6 1c-.5-.2-1-.5-1-1.1 0-.6.4-1.1.8-1.1zm3 0c.4 0 .8.5.8 1.1 0 .6-.5.9-1 1.1-.3 0-.6-.4-.6-1s.3-1.2.8-1.2z"/></svg> Linux</div>
         <div class="what"><span data-en>64-bit: any distribution (AppImage), Debian / Ubuntu (.deb)</span><span data-zh>64 位：任意发行版（AppImage）、Debian / Ubuntu（.deb）</span></div>
         <div class="btns">
-          <a class="btn" data-asset="linux-appimage" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.4.4/Pensieve-0.4.4-linux-x86_64.AppImage">AppImage</a>
-          <a class="btn alt" data-asset="linux-deb" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.4.4/Pensieve-0.4.4-linux-amd64.deb">.deb</a>
+          <a class="btn" data-asset="linux-appimage" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.4.5/Pensieve-0.4.5-linux-x86_64.AppImage">AppImage</a>
+          <a class="btn alt" data-asset="linux-deb" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.4.5/Pensieve-0.4.5-linux-amd64.deb">.deb</a>
         </div>
         <div class="size" data-size="linux-appimage"></div>
       </div>
       <div class="dl" data-os="android">
         <div class="os"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 9.5l1.9-3.3a.4.4 0 0 0-.7-.4l-1.9 3.3a11.6 11.6 0 0 0-9.8 0L5.2 5.8a.4.4 0 0 0-.7.4l1.9 3.3A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.5zM7 15.2a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm10 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg> Android</div>
         <div class="what"><span data-en>Android 8 or later · HarmonyOS via 卓易通</span><span data-zh>Android 8 及以上 · 鸿蒙可通过卓易通安装</span></div>
-        <div class="btns"><a class="btn" data-asset="android" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.4.4/Pensieve-0.4.4-android.apk"><span data-en>Download (.apk)</span><span data-zh>下载（.apk）</span></a></div>
+        <div class="btns"><a class="btn" data-asset="android" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.4.5/Pensieve-0.4.5-android.apk"><span data-en>Download (.apk)</span><span data-zh>下载（.apk）</span></a></div>
         <div class="size" data-size="android"></div>
       </div>
       <div class="dl" data-os="ios">
@@ -269,13 +310,14 @@ html:not([lang="zh"]) [data-zh] { display: none; }
 <section id="start">
   <div class="wrap">
     <h2><span data-en>Getting started</span><span data-zh>快速上手</span></h2>
-    <p class="intro"><span data-en>No account and no cloud: your computer is the hub, and every device keeps a full copy that works offline.</span><span data-zh>无需注册，也不经过云端：你的电脑就是同步中心，每台设备都保存完整副本，离线也能用。</span></p>
+    <p class="intro"><span data-en>Up and running in five minutes — no account, no cloud.</span><span data-zh>五分钟上手——无需注册，不经过云端。</span></p>
     <div class="steps">
       <div class="step"><h4><span data-en>Install on your computer</span><span data-zh>安装到电脑</span></h4><p><span data-en>It runs Pensieve's server by itself. Closing the window keeps it in the tray.</span><span data-zh>它自带 Pensieve 服务器。关闭窗口后会继续在托盘中运行。</span></p></div>
       <div class="step"><h4><span data-en>Add an AI model</span><span data-zh>添加 AI 模型</span></h4><p><span data-en>Settings → AI models: a key from DeepSeek, SiliconFlow, OpenAI, Qwen, Kimi, GLM or any OpenAI-compatible service. Keys stay encrypted on your computer.</span><span data-zh>设置 → AI 模型：填入 DeepSeek、硅基流动、OpenAI、通义千问、Kimi、智谱或任意 OpenAI 兼容服务的密钥。密钥加密保存在你的电脑上。</span></p></div>
       <div class="step"><h4><span data-en>Pair your phone</span><span data-zh>配对手机</span></h4><p><span data-en>Settings → Sync → Pair a phone, then enter the address and 6-digit code on the phone. Away from home, use Tailscale.</span><span data-zh>设置 → 同步 → 配对手机，然后在手机上输入地址和 6 位配对码。在外时可使用 Tailscale。</span></p></div>
       <div class="step"><h4><span data-en>Speak</span><span data-zh>开口说</span></h4><p><span data-en>Press the round mic or Ctrl/⌘+Shift+Space and say what's on your mind.</span><span data-zh>点圆形麦克风或按 Ctrl/⌘+Shift+Space，说出你在想的事。</span></p></div>
     </div>
+    <p style="text-align:center;margin-top:34px"><a class="cta" href="#download"><span data-en>Get Pensieve — it's free</span><span data-zh>免费获取 Pensieve</span></a></p>
     <p class="honest"><span data-en>Pensieve is young and moving fast. The macOS apps are not notarized and have had little testing on real Macs; the Windows installer is not code-signed yet.</span><span data-zh>Pensieve 仍在快速迭代中。macOS 版尚未公证，在真机上测试较少；Windows 安装包暂未代码签名。</span></p>
   </div>
 </section>
