@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pensieve — AI research notebook</title>
-<meta name="description" content="Pensieve — free, local, private AI research notebook: speak your thoughts, plan your day, read and translate papers, work with Codex — on Windows, macOS, Linux and Android, synced through your own computer.">
+<meta name="description" content="Pensieve — free, local, private AI research notebook: speak your thoughts, plan your day, read and translate papers, work with Codex — on Windows, macOS, Linux, Android and iOS, synced through your own computer.">
 <meta property="og:title" content="Pensieve — AI research notebook">
 <meta property="og:description" content="Speak your thoughts, plan your day, read and translate papers, work with Codex — on your computer and your phone, in sync.">
 <meta property="og:image" content="https://photonghost308.github.io/pensieve-app/screenshots/today.webp">
@@ -308,8 +308,9 @@ html:not([lang="zh"]) [data-zh] { display: none; }
       </div>
       <div class="dl" data-os="ios">
         <div class="os"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg> iPhone &amp; iPad</div>
-        <div class="what"><span data-en>The iOS app is on its way.</span><span data-zh>iOS 版即将推出。</span></div>
-        <div class="btns"><span class="soon"><span data-en>Coming soon</span><span data-zh>敬请期待</span></span></div>
+        <div class="what"><span data-en>iOS / iPadOS 15+ · Requires signing with a computer</span><span data-zh>iOS / iPadOS 15 及以上 · 需用电脑自签安装</span></div>
+        <div class="btns"><a class="btn" data-asset="ios" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.4.5/Pensieve-0.4.5-ios-unsigned.ipa"><span data-en>Download IPA</span><span data-zh>下载 IPA</span></a><a class="btn alt" href="#ios-install"><span data-en>How to install</span><span data-zh>安装方法</span></a></div>
+        <div class="size" data-size="ios"></div>
       </div>
     </div>
     <p class="note">
@@ -319,9 +320,23 @@ html:not([lang="zh"]) [data-zh] { display: none; }
   </div>
 </section>
 
+<section id="ios-install">
+  <div class="wrap">
+    <h2><span data-en>Install on iPhone &amp; iPad</span><span data-zh>安装到 iPhone 与 iPad</span></h2>
+    <p><span data-en>This IPA is unsigned. It needs your own Apple ID signing through a computer; Safari cannot install it directly. It is not an App Store or TestFlight release.</span><span data-zh>这是未签名 IPA，需要通过电脑用你自己的 Apple ID 签名；不能直接在 Safari 中点击安装，目前不是 App Store 或 TestFlight 版本。</span></p>
+    <ol>
+      <li><span data-en>On your Mac or Windows PC, <a data-asset="ios" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.4.5/Pensieve-0.4.5-ios-unsigned.ipa">download the IPA</a> and install <a href="https://sideloadly.io/">Sideloadly</a> from its official website (or use <a href="https://altstore.io/">AltStore</a>).</span><span data-zh>在 Mac 或 Windows 电脑上<a data-asset="ios" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.4.5/Pensieve-0.4.5-ios-unsigned.ipa">下载 IPA</a>，从官网安装 <a href="https://sideloadly.io/">Sideloadly</a>（也可使用 <a href="https://altstore.io/">AltStore</a>）。</span></li>
+      <li><span data-en>Connect your device by USB and tap Trust. Open the IPA in Sideloadly, select the device and follow its Apple ID signing instructions. Never enter Apple credentials on this website or GitHub.</span><span data-zh>用 USB 连接手机并点击“信任”。在 Sideloadly 中选择 IPA 和设备，按其说明使用 Apple ID 签名安装。不要在本网页或 GitHub 输入 Apple 账号密码。</span></li>
+      <li><span data-en>If prompted, trust the developer profile in Settings → General → VPN &amp; Device Management. On iOS 16+, enable Developer Mode in Settings → Privacy &amp; Security and restart when requested.</span><span data-zh>按提示到“设置 → 通用 → VPN 与设备管理”信任开发者；iOS 16 及以上可能需要在“设置 → 隐私与安全性”开启“开发者模式”并重启。</span></li>
+      <li><span data-en>Open Pensieve. Allow microphone, local network and notifications as needed. To sync, keep your computer's Pensieve open and pair under Settings → Sync server on the same Wi-Fi.</span><span data-zh>打开 Pensieve，按需要允许麦克风、本地网络和通知权限。同步时保持电脑上的 Pensieve 运行，在同一 Wi-Fi 下通过“设置 → 同步服务器”配对。</span></li>
+    </ol>
+    <p class="note"><span data-en>Free Apple ID signing normally needs refreshing every 7 days. Keep Pensieve open while recording; desktop integrations require your computer. This initial iOS build has not yet been tested on a physical iPhone.</span><span data-zh>免费 Apple ID 签名通常每 7 天需要刷新。录音时请保持应用在前台；桌面集成功能需要电脑。本次 iOS 初版尚未经过实体 iPhone 测试。</span></p>
+  </div>
+</section>
 <section id="start">
   <div class="wrap">
     <h2><span data-en>Getting started</span><span data-zh>快速上手</span></h2>
+    <p><span data-en>On iPhone or iPad? <a href="#ios-install">Download and install the iOS app →</a></span><span data-zh>使用 iPhone 或 iPad？<a href="#ios-install">下载并安装 iOS 版 →</a></span></p>
     <p class="intro"><span data-en>Up and running in five minutes — no account, no cloud.</span><span data-zh>五分钟上手——无需注册，不经过云端。</span></p>
     <div class="steps">
       <div class="step"><h4><span data-en>Install on your computer</span><span data-zh>安装到电脑</span></h4><p><span data-en>It runs Pensieve's server by itself. Closing the window keeps it in the tray.</span><span data-zh>它自带 Pensieve 服务器。关闭窗口后会继续在托盘中运行。</span></p></div>
@@ -363,7 +378,7 @@ html:not([lang="zh"]) [data-zh] { display: none; }
 
   // Which system the visitor is on: their card is highlighted, and the big button points at it.
   const ua = navigator.userAgent;
-  let os = /Android/i.test(ua) ? 'android' : /iPhone|iPad|iPod/i.test(ua) ? 'ios' : /Mac/i.test(ua) ? 'mac' : /Win/i.test(ua) ? 'win' : /Linux/i.test(ua) ? 'linux' : '';
+  let os = /Android/i.test(ua) ? 'android' : (/iPhone|iPad|iPod/i.test(ua) || (/Macintosh/i.test(ua) && navigator.maxTouchPoints > 1)) ? 'ios' : /Mac/i.test(ua) ? 'mac' : /Win/i.test(ua) ? 'win' : /Linux/i.test(ua) ? 'linux' : '';
   const NAMES = { win: 'Windows', 'mac-arm': 'macOS · Apple Silicon', 'mac-intel': 'macOS · Intel', linux: 'Linux', android: 'Android', ios: 'iOS' };
   const mark = (id) => {
     document.querySelectorAll('.dl').forEach((d) => {
@@ -395,7 +410,7 @@ html:not([lang="zh"]) [data-zh] { display: none; }
   // The newest release: its version, links and sizes (the links above are the fallback).
   const PICK = {
     win: /Setup.*\.exe$/i, 'mac-arm': /mac-arm64\.zip$/i, 'mac-intel': /mac-x64\.zip$/i,
-    'linux-appimage': /\.AppImage$/i, 'linux-deb': /\.deb$/i, android: /\.apk$/i,
+    'linux-appimage': /\.AppImage$/i, 'linux-deb': /\.deb$/i, android: /\.apk$/i, ios: /-ios-unsigned\.ipa$/i,
   };
   fetch('https://api.github.com/repos/PhotonGhost308/pensieve-app/releases/latest', { headers: { accept: 'application/vnd.github+json' } })
     .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
