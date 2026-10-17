@@ -17,7 +17,7 @@ Windows · macOS (Apple Silicon & Intel) · Linux · Android · iPhone & iPad</p
 
 ## Why Pensieve
 
-- 🎙 **Think out loud, get organized.** Ramble for a minute — Pensieve turns it into an idea, to-dos and calendar entries, each in its place. With the cursor in a note, your words are tidied and typed right there.
+- 🎙 **Think out loud, get organized.** Ramble for a minute — Pensieve turns it into an idea, to-dos and calendar entries, each in its place. With the cursor in a text box or a page, it is plain dictation: a small waveform, and your words are tidied and typed right there (Ctrl+Shift+Space, again to finish, Esc to cancel).
 - 📄 **Read papers in your own language.** Select a passage or translate a page: the translation follows the paper's paragraphs and puts the key sentences in **bold**.
 - 🔎 **Never miss new work.** AI searches arXiv and OpenAlex, rates every paper against *your* project and brings the newest ones every morning.
 - 🗓 **A day you can actually do.** Appointments stay fixed, work fits around them, reminders reach your phone.
@@ -33,7 +33,7 @@ Windows · macOS (Apple Silicon & Intel) · Linux · Android · iPhone & iPad</p
 ## Free, local, private
 
 - **Free.** Pensieve costs nothing. You pay your AI provider only for what you use — or run a free local model with Ollama.
-- **Works locally.** Your computer is the hub: your notes live there, every paired phone or laptop keeps a full copy that works offline, and sync goes straight between your own devices.
+- **Works locally.** Your computer is the hub: your notes live there, every paired phone or laptop keeps a full copy that works offline, and sync goes straight between your own devices — or, if you like, through your own Jianguoyun (坚果云) WebDAV account.
 - **Collects no data.** No account, no Pensieve cloud, no analytics, no tracking — nothing is ever sent to us.
 - **Your AI, your key.** AI requests go directly from your computer to the service you choose (DeepSeek, SiliconFlow, OpenAI, Qwen, Kimi, GLM, Ollama…). Your key is stored encrypted on your computer.
 
