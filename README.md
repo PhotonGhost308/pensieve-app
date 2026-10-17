@@ -46,6 +46,16 @@ Windows · macOS (Apple Silicon & Intel) · Linux · Android · iPhone & iPad</p
 
 First start: Windows SmartScreen → *More info → Run anyway*. macOS → *System Settings → Privacy & Security → Open Anyway* (the app is not notarized yet). Linux → `chmod +x` the AppImage, or `sudo apt install ./Pensieve-*.deb`. iPhone / iPad (iOS 15+) → download the IPA and install it with Sideloadly or AltStore ([step by step](https://photonghost308.github.io/pensieve-app/#ios-install)).
 
+## Sync through Nutstore (坚果云) — optional
+
+No shared Wi-Fi needed; the phone syncs even while the computer is off.
+
+1. Sign up free at [jianguoyun.com](https://www.jianguoyun.com/d/signup). The Nutstore apps ([download](https://www.jianguoyun.com/s/downloads)) are optional.
+2. [Sign in on the web](https://www.jianguoyun.com/d/login) → your name (top right) → 账户信息 → 安全选项 → 第三方应用管理 → 添加应用密码, name it `Pensieve`, click 生成密码 and copy the password.
+3. In Pensieve on the computer, then on the phone: **Settings → Sync → 坚果云同步** → 坚果云账号 = your Nutstore **email**, 第三方应用密码 = the **app password** (not your login password). Keep the address and folder as they are and click 保存并启用同步.
+
+中文：在 [坚果云官网](https://www.jianguoyun.com/d/signup) 注册（[客户端下载](https://www.jianguoyun.com/s/downloads) 非必需）→ 网页登录后「账户信息 → 安全选项 → 第三方应用管理 → 添加应用密码」，名称填 Pensieve，生成并复制密码 → 电脑和手机上 Pensieve「设置 → 同步 → 坚果云同步」：账号填注册邮箱，密码填应用密码（不是登录密码），地址和目录保持默认，点「保存并启用同步」。
+
 ## Designer
 
 Pensieve is designed by **Tianyi Xu** — homepage: [photontec.github.io](https://photontec.github.io/#about-me).
