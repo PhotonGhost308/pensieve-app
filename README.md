@@ -20,10 +20,12 @@ Windows · macOS (Apple Silicon & Intel) · Linux · Android · iPhone & iPad</p
 - 🎙 **Think out loud, get organized.** Ramble for a minute — Pensieve turns it into an idea, to-dos and calendar entries, each in its place. With the cursor in a text box or a page, it is plain dictation: a small waveform, and your words are tidied and typed right there (the voice hotkey — ⌥Space on a Mac, Ctrl+Shift+Space on Windows and Linux, changeable in Settings → Voice & memory — again to finish, Esc to cancel).
 - 📄 **Read papers in your own language.** Select a passage or translate a page: the translation follows the paper's paragraphs and puts the key sentences in **bold**.
 - 🔎 **Never miss new work.** AI searches arXiv and OpenAlex, rates every paper against *your* project and brings the newest ones every morning.
-- 🗓 **A day you can actually do.** Appointments stay fixed, work fits around them, reminders reach your phone.
+- 📚 **Bring your library and notes along.** Zotero, EndNote or Mendeley — collections, notes and PDFs included; pages from Notion or Obsidian with their headings, links, pictures, files and formulas intact.
+- 💡 **Ideas that connect.** Within a project and across all of them — Pensieve says how ideas relate and what new thinking follows.
+- 🗓 **A day you can actually do.** Appointments stay fixed, work fits around them, reminders reach your phone. Import your class timetable from a photo — rooms, times and exam countdowns included.
 - 📬 **Email that tells you what it needs** — to-dos, deadlines, meetings and reply drafts, pulled out for you.
 - 💻 **Codex, Git and terminals** right next to your notes (desktop).
-- 🌏 **English and 中文**, light and dark, on every device — always in sync.
+- 🌏 **English and 中文**, light and dark, on every device — always in sync. Pensieve keeps itself up to date and asks before restarting.
 
 | | |
 |---|---|
