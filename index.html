@@ -209,6 +209,16 @@ html:not([lang="zh"]) [data-zh] { display: none; }
 
     <div class="feature">
       <div class="text">
+        <span class="tag"><span data-en>Courses</span><span data-zh>课程</span></span>
+        <h3><span data-en>Learn a field, lesson by lesson</span><span data-zh>一课一课，学懂一个领域</span></h3>
+        <p><span data-en>Courses take you through a field the way a good advisor would: the words you need, explained from scratch; two or three papers per lesson to read closely — how each one works and how it was tested, and what to look at yourself; talks by the authors; questions to check yourself and open research questions. Your progress and notes follow you to every device.</span><span data-zh>课程像一位好导师那样带你走进一个领域：从零讲清需要的术语；每课两三篇要精读的论文——它怎么做、怎么训练和测试，以及你要自己细看的地方；作者本人的讲座；自我检查题和开放的研究问题。学习进度和笔记在你的所有设备上同步。</span></p>
+        <p><span data-en>The first course covers embodied AI, from "what is a robot policy" to vision-language-action models, robot data, reinforcement learning and world action models. Its paper radar finds the new papers worth your time every day — from the labs and people you follow, with code that took off, or upvoted by the community — and says why.</span><span data-zh>第一门课是具身智能：从“什么是机器人策略”讲到视觉-语言-动作模型、机器人数据、强化学习和世界动作模型。它的论文雷达每天找出值得你花时间的新论文——来自你关注的实验室和人、代码受欢迎、或被社区点赞——并告诉你为什么。</span></p>
+      </div>
+      <img class="shot" src="screenshots/courses.webp" alt="A lesson of the embodied-AI course" loading="lazy" width="1920" height="1200">
+    </div>
+
+    <div class="feature flip">
+      <div class="text">
         <span class="tag"><span data-en>Planning</span><span data-zh>计划</span></span>
         <h3><span data-en>Plan around what is fixed</span><span data-zh>围绕固定日程做计划</span></h3>
         <p><span data-en>Import your class timetable from a photo, PDF or spreadsheet — classes show their room and time, exams count down. Appointments stay solid, work blocks fit around them. Deadlines count down, waiting items come back on time, and reminders reach your phone even when the app is closed.</span><span data-zh>拍一张课表照片、或导入 PDF / 表格即可导入课表——课程显示教室和时间，考试自动倒计时。约会和会议是固定的，工作时段围绕它们安排。截止日期倒计时，等待中的事项按时提醒，即使应用关闭，提醒也会送到手机。</span></p>
@@ -216,7 +226,7 @@ html:not([lang="zh"]) [data-zh] { display: none; }
       <img class="shot" src="screenshots/calendar.webp" alt="The calendar" loading="lazy" width="1920" height="1200">
     </div>
 
-    <div class="feature flip">
+    <div class="feature">
       <div class="text">
         <span class="tag"><span data-en>Pages</span><span data-zh>页面</span></span>
         <h3><span data-en>Pages with AI conversations inside</span><span data-zh>内嵌 AI 对话的页面</span></h3>
@@ -225,7 +235,7 @@ html:not([lang="zh"]) [data-zh] { display: none; }
       <img class="shot" src="screenshots/page-ai.webp" alt="An AI conversation in a page" loading="lazy" width="1920" height="1200">
     </div>
 
-    <div class="feature">
+    <div class="feature flip">
       <div class="text">
         <span class="tag"><span data-en>Email</span><span data-zh>邮件</span></span>
         <h3><span data-en>Email that tells you what it needs</span><span data-zh>告诉你该做什么的邮箱</span></h3>
@@ -234,7 +244,7 @@ html:not([lang="zh"]) [data-zh] { display: none; }
       <img class="shot" src="screenshots/inbox.webp" alt="The email inbox" loading="lazy" width="1920" height="1200">
     </div>
 
-    <div class="feature flip">
+    <div class="feature">
       <div class="text">
         <span class="tag"><span data-en>Desktop</span><span data-zh>桌面版</span></span>
         <h3><span data-en>Codex, Git and terminals</span><span data-zh>Codex、Git 与终端</span></h3>
@@ -277,40 +287,40 @@ html:not([lang="zh"]) [data-zh] { display: none; }
       <div class="dl" data-os="win">
         <div class="os"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5 10.5 4.4v7.1H3V5.5zm8.5-1.2L21 3v8.5h-9.5V4.3zM3 12.5h7.5v7.1L3 18.5v-6zm8.5 0H21V21l-9.5-1.3v-7.2z"/></svg> Windows</div>
         <div class="what"><span data-en>Windows 10 and 11 (64-bit)</span><span data-zh>Windows 10 / 11（64 位）</span></div>
-        <div class="btns"><a class="btn" data-asset="win" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.6.4/Pensieve-Setup-0.6.4.exe"><span data-en>Installer (.exe)</span><span data-zh>安装包（.exe）</span></a></div>
+        <div class="btns"><a class="btn" data-asset="win" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.6.5/Pensieve-Setup-0.6.5.exe"><span data-en>Installer (.exe)</span><span data-zh>安装包（.exe）</span></a></div>
         <div class="size" data-size="win"></div>
       </div>
       <div class="dl" data-os="mac-arm">
         <div class="os"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.5 2-3.7 2.1-3.8-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9s-2-.9-3.3-.9C6.1 6.9 4.5 7.9 3.6 9.5c-1.9 3.2-.5 8 1.3 10.6.9 1.3 1.9 2.7 3.3 2.6 1.3-.1 1.8-.8 3.4-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.2-2.6 1-1.5 1.4-2.9 1.4-3-.1 0-2.2-.8-2.2-3.5zM13.9 5.1c.7-.9 1.2-2.1 1.1-3.3-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.2 1.1.1 2.3-.6 3-1.5z"/></svg> macOS · Apple Silicon</div>
         <div class="what"><span data-en>Macs with M1, M2, M3 or M4</span><span data-zh>搭载 M1–M4 芯片的 Mac</span></div>
-        <div class="btns"><a class="btn" data-asset="mac-arm" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.6.4/Pensieve-0.6.4-mac-arm64.zip"><span data-en>Download (.zip)</span><span data-zh>下载（.zip）</span></a></div>
+        <div class="btns"><a class="btn" data-asset="mac-arm" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.6.5/Pensieve-0.6.5-mac-arm64.zip"><span data-en>Download (.zip)</span><span data-zh>下载（.zip）</span></a></div>
         <div class="size" data-size="mac-arm"></div>
       </div>
       <div class="dl" data-os="mac-intel">
         <div class="os"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.5 2-3.7 2.1-3.8-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9s-2-.9-3.3-.9C6.1 6.9 4.5 7.9 3.6 9.5c-1.9 3.2-.5 8 1.3 10.6.9 1.3 1.9 2.7 3.3 2.6 1.3-.1 1.8-.8 3.4-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.2-2.6 1-1.5 1.4-2.9 1.4-3-.1 0-2.2-.8-2.2-3.5zM13.9 5.1c.7-.9 1.2-2.1 1.1-3.3-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.2 1.1.1 2.3-.6 3-1.5z"/></svg> macOS · Intel</div>
         <div class="what"><span data-en>Macs with an Intel processor</span><span data-zh>搭载 Intel 处理器的 Mac</span></div>
-        <div class="btns"><a class="btn" data-asset="mac-intel" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.6.4/Pensieve-0.6.4-mac-x64.zip"><span data-en>Download (.zip)</span><span data-zh>下载（.zip）</span></a></div>
+        <div class="btns"><a class="btn" data-asset="mac-intel" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.6.5/Pensieve-0.6.5-mac-x64.zip"><span data-en>Download (.zip)</span><span data-zh>下载（.zip）</span></a></div>
         <div class="size" data-size="mac-intel"></div>
       </div>
       <div class="dl" data-os="linux">
         <div class="os"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-2 0-3.3 1.7-3.3 4.2 0 1.3.2 2.2-.6 3.6-.9 1.6-2.6 3.6-2.6 6.4 0 .6.1 1.1.3 1.6-.7.5-1.6.7-1.6 1.6 0 1.1 1.6 1.2 3.3 1.8 1.2.4 2.2 1 3.2.6.6-.2 1-.7 1.3-.7s.7.5 1.3.7c1 .4 2-.2 3.2-.6 1.7-.6 3.3-.7 3.3-1.8 0-.9-.9-1.1-1.6-1.6.2-.5.3-1 .3-1.6 0-2.8-1.7-4.8-2.6-6.4-.8-1.4-.6-2.3-.6-3.6C15.3 3.7 14 2 12 2zm-1.5 4.5c.5 0 .8.6.8 1.2s-.3 1-.6 1c-.5-.2-1-.5-1-1.1 0-.6.4-1.1.8-1.1zm3 0c.4 0 .8.5.8 1.1 0 .6-.5.9-1 1.1-.3 0-.6-.4-.6-1s.3-1.2.8-1.2z"/></svg> Linux</div>
         <div class="what"><span data-en>64-bit: any distribution (AppImage), Debian / Ubuntu (.deb)</span><span data-zh>64 位：任意发行版（AppImage）、Debian / Ubuntu（.deb）</span></div>
         <div class="btns">
-          <a class="btn" data-asset="linux-appimage" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.6.4/Pensieve-0.6.4-linux-x86_64.AppImage">AppImage</a>
-          <a class="btn alt" data-asset="linux-deb" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.6.4/Pensieve-0.6.4-linux-amd64.deb">.deb</a>
+          <a class="btn" data-asset="linux-appimage" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.6.5/Pensieve-0.6.5-linux-x86_64.AppImage">AppImage</a>
+          <a class="btn alt" data-asset="linux-deb" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.6.5/Pensieve-0.6.5-linux-amd64.deb">.deb</a>
         </div>
         <div class="size" data-size="linux-appimage"></div>
       </div>
       <div class="dl" data-os="android">
         <div class="os"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 9.5l1.9-3.3a.4.4 0 0 0-.7-.4l-1.9 3.3a11.6 11.6 0 0 0-9.8 0L5.2 5.8a.4.4 0 0 0-.7.4l1.9 3.3A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.5zM7 15.2a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm10 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg> Android</div>
         <div class="what"><span data-en>Android 8 or later · HarmonyOS via 卓易通</span><span data-zh>Android 8 及以上 · 鸿蒙可通过卓易通安装</span></div>
-        <div class="btns"><a class="btn" data-asset="android" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.6.4/Pensieve-0.6.4-android.apk"><span data-en>Download (.apk)</span><span data-zh>下载（.apk）</span></a></div>
+        <div class="btns"><a class="btn" data-asset="android" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.6.5/Pensieve-0.6.5-android.apk"><span data-en>Download (.apk)</span><span data-zh>下载（.apk）</span></a></div>
         <div class="size" data-size="android"></div>
       </div>
       <div class="dl" data-os="ios">
         <div class="os"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg> iPhone &amp; iPad</div>
         <div class="what"><span data-en>iOS / iPadOS 15+ · Requires signing with a computer</span><span data-zh>iOS / iPadOS 15 及以上 · 需用电脑自签安装</span></div>
-        <div class="btns"><a class="btn" data-asset="ios" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.6.4/Pensieve-0.6.4-ios-unsigned.ipa"><span data-en>Download IPA</span><span data-zh>下载 IPA</span></a><a class="btn alt" href="#ios-install"><span data-en>How to install</span><span data-zh>安装方法</span></a></div>
+        <div class="btns"><a class="btn" data-asset="ios" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.6.5/Pensieve-0.6.5-ios-unsigned.ipa"><span data-en>Download IPA</span><span data-zh>下载 IPA</span></a><a class="btn alt" href="#ios-install"><span data-en>How to install</span><span data-zh>安装方法</span></a></div>
         <div class="size" data-size="ios"></div>
       </div>
     </div>
@@ -326,7 +336,7 @@ html:not([lang="zh"]) [data-zh] { display: none; }
     <h2><span data-en>Install on iPhone &amp; iPad</span><span data-zh>安装到 iPhone 与 iPad</span></h2>
     <p><span data-en>This IPA is unsigned. It needs your own Apple ID signing through a computer; Safari cannot install it directly. It is not an App Store or TestFlight release.</span><span data-zh>这是未签名 IPA，需要通过电脑用你自己的 Apple ID 签名；不能直接在 Safari 中点击安装，目前不是 App Store 或 TestFlight 版本。</span></p>
     <ol>
-      <li><span data-en>On your Mac or Windows PC, <a data-asset="ios" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.6.4/Pensieve-0.6.4-ios-unsigned.ipa">download the IPA</a> and install <a href="https://sideloadly.io/">Sideloadly</a> from its official website (or use <a href="https://altstore.io/">AltStore</a>).</span><span data-zh>在 Mac 或 Windows 电脑上<a data-asset="ios" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.6.4/Pensieve-0.6.4-ios-unsigned.ipa">下载 IPA</a>，从官网安装 <a href="https://sideloadly.io/">Sideloadly</a>（也可使用 <a href="https://altstore.io/">AltStore</a>）。</span></li>
+      <li><span data-en>On your Mac or Windows PC, <a data-asset="ios" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.6.5/Pensieve-0.6.5-ios-unsigned.ipa">download the IPA</a> and install <a href="https://sideloadly.io/">Sideloadly</a> from its official website (or use <a href="https://altstore.io/">AltStore</a>).</span><span data-zh>在 Mac 或 Windows 电脑上<a data-asset="ios" href="https://github.com/PhotonGhost308/pensieve-app/releases/download/v0.6.5/Pensieve-0.6.5-ios-unsigned.ipa">下载 IPA</a>，从官网安装 <a href="https://sideloadly.io/">Sideloadly</a>（也可使用 <a href="https://altstore.io/">AltStore</a>）。</span></li>
       <li><span data-en>Connect your device by USB and tap Trust. Open the IPA in Sideloadly, select the device and follow its Apple ID signing instructions. Never enter Apple credentials on this website or GitHub.</span><span data-zh>用 USB 连接手机并点击“信任”。在 Sideloadly 中选择 IPA 和设备，按其说明使用 Apple ID 签名安装。不要在本网页或 GitHub 输入 Apple 账号密码。</span></li>
       <li><span data-en>If prompted, trust the developer profile in Settings → General → VPN &amp; Device Management. On iOS 16+, enable Developer Mode in Settings → Privacy &amp; Security and restart when requested.</span><span data-zh>按提示到“设置 → 通用 → VPN 与设备管理”信任开发者；iOS 16 及以上可能需要在“设置 → 隐私与安全性”开启“开发者模式”并重启。</span></li>
       <li><span data-en>Open Pensieve. Allow microphone, local network and notifications as needed. To sync, keep your computer's Pensieve open and pair under Settings → Sync server on the same Wi-Fi.</span><span data-zh>打开 Pensieve，按需要允许麦克风、本地网络和通知权限。同步时保持电脑上的 Pensieve 运行，在同一 Wi-Fi 下通过“设置 → 同步服务器”配对。</span></li>
